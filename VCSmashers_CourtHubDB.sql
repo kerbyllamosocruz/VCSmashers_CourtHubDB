@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   `total_fee` DECIMAL(10,2) NOT NULL DEFAULT 0.00,
   `event_date` DATE NOT NULL,
   `event_time` TIME NOT NULL,
+  `event_end_time` TIME NOT NULL,
   `booking_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` VARCHAR(50) DEFAULT 'PENDING', -- PENDING, CONFIRMED, CANCELLED
   PRIMARY KEY (`booking_id`),
